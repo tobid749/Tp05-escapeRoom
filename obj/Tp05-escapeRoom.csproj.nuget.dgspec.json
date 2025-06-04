@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\49373638\\Documents\\Tp05-escapeRoom\\Tp05-escapeRoom\\Tp05-escapeRoom.csproj": {}
+    "C:\\Users\\49373638\\Documents\\Tp05-escapeRoom\\Tp05-escapeRoom.csproj": {}
   },
   "projects": {
-    "C:\\Users\\49373638\\Documents\\Tp05-escapeRoom\\Tp05-escapeRoom\\Tp05-escapeRoom.csproj": {
+    "C:\\Users\\49373638\\Documents\\Tp05-escapeRoom\\Tp05-escapeRoom.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\49373638\\Documents\\Tp05-escapeRoom\\Tp05-escapeRoom\\Tp05-escapeRoom.csproj",
+        "projectUniqueName": "C:\\Users\\49373638\\Documents\\Tp05-escapeRoom\\Tp05-escapeRoom.csproj",
         "projectName": "Tp05-escapeRoom",
-        "projectPath": "C:\\Users\\49373638\\Documents\\Tp05-escapeRoom\\Tp05-escapeRoom\\Tp05-escapeRoom.csproj",
+        "projectPath": "C:\\Users\\49373638\\Documents\\Tp05-escapeRoom\\Tp05-escapeRoom.csproj",
         "packagesPath": "C:\\Users\\49373638\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\49373638\\Documents\\Tp05-escapeRoom\\Tp05-escapeRoom\\obj\\",
+        "outputPath": "C:\\Users\\49373638\\Documents\\Tp05-escapeRoom\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
