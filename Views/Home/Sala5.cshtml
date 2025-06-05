@@ -1,0 +1,32 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Sala 5 - Pelea final con Viruzz</h2>
+<p>Encontrá los guantes y golpeá a Viruzz</p>
+<img src="/imagenes/imagenguante1.png" onclick="agarrarGuante(this)" />
+<img src="/imagenes/imagenguante2.png" onclick="agarrarGuante(this)" />
+<br>
+<img id="viruzz" src="/imagenes/imagenviruzz1.png" onclick="golpearViruzz()" />
+<script>
+    function agarrarGuante(img) {
+        fetch('/Home/EncontrarGuante', { method: 'POST' })
+            .then(res => res.json())
+            .then(data => {
+                img.style.display = 'none';
+            });
+    }
+    function golpearViruzz() {
+        fetch('/Home/GolpearViruzz', { method: 'POST' })
+            .then(res => res.json())
+            .then(data => {
+                if (data.exito) {
+                    document.getElementById('viruzz').src = '/imagenes/' + data.imagenViruzz + '.png';
+                } else {
+                    alert(data.mensaje);
+                }
+                if (data.ganado) {
+                    window.location.href = '/Home/Victoria';
+                }
+            });
+    }
+</script>

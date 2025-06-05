@@ -1,0 +1,14 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Sala 3 - ¿Qué me pongo para la boda de Coscu?</h2>
+<p>Elegí la prenda correcta</p>
+<form method="post" action="/Home/Sala3">
+    <button type="submit" name="prenda" value="imagen1">Remera</button>
+    <button type="submit" name="prenda" value="imagen2">Campera</button>
+    <button type="submit" name="prenda" value="imagen4">Traje</button>
+</form>
+@if (ViewBag.Error != null) {
+    <p class="error">@ViewBag.Error</p>
+}
+

@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Iniciar";
+}
+[HttpGet]
+public IActionResult Iniciar()
+{
+    return View();
+}
+<h2>Ingresá tu nombre para comenzar</h2>
+<form method="post" action="/Home/Iniciar">
+    <input type="text" name="nombreJugador" required />
+    <button type="submit">Comenzar</button>
+</form>

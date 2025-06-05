@@ -1,0 +1,14 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Sala 1 - El clásico baneo</h2>
+
+<p>Usá este <a href="https://wordwall.net/es/resource/93320348" target="_blank">link</a> para resolver el anagrama</p>
+<form method="post" action="/Home/Sala1">
+    <input type="text" name="respuesta" />
+    <button type="submit">Enviar</button>
+</form>
+@if (ViewBag.Error != null) {
+    <p class="error">@ViewBag.Error</p>
+}
+

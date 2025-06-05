@@ -19334,8 +19334,43 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\49373638\\Documents\\Tp05-escapeRoom\\Views\\Home\\sala1.cshtml",
+      "TargetPath": "Views\\Home\\sala1.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\49373638\\Documents\\Tp05-escapeRoom\\Views\\Home\\Sala2.cshtml",
+      "TargetPath": "Views\\Home\\Sala2.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\49373638\\Documents\\Tp05-escapeRoom\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\49373638\\Documents\\Tp05-escapeRoom\\Views\\Home\\Iniciar.cshtml",
+      "TargetPath": "Views\\Home\\Iniciar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\49373638\\Documents\\Tp05-escapeRoom\\Views\\Home\\Penal.cshtml",
+      "TargetPath": "Views\\Home\\Penal.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\49373638\\Documents\\Tp05-escapeRoom\\Views\\Home\\Victoria.cshtml",
+      "TargetPath": "Views\\Home\\Victoria.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\49373638\\Documents\\Tp05-escapeRoom\\Views\\Home\\Gol.cshtml",
+      "TargetPath": "Views\\Home\\Gol.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\49373638\\Documents\\Tp05-escapeRoom\\Views\\Home\\Sala5.cshtml",
+      "TargetPath": "Views\\Home\\Sala5.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -19351,6 +19386,16 @@
     {
       "FilePath": "c:\\Users\\49373638\\Documents\\Tp05-escapeRoom\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\49373638\\Documents\\Tp05-escapeRoom\\Views\\Home\\Sala4.cshtml",
+      "TargetPath": "Views\\Home\\Sala4.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\49373638\\Documents\\Tp05-escapeRoom\\Views\\Home\\Sala3.cshtml",
+      "TargetPath": "Views\\Home\\Sala3.cshtml",
       "FileKind": "mvc"
     }
   ],

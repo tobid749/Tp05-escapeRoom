@@ -1,0 +1,26 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Sala 2 - Buscá las llaves de las 3 propiedades</h2>
+<p>Tocá las 3 llaves para avanzar</p>
+<div class="imagenes">
+    <img src="/imagenes/imagen1.png" onclick="encontrarLlave(this)" />
+    <img src="/imagenes/imagen2.png" onclick="encontrarLlave(this)" />
+    <img src="/imagenes/imagen3.png" onclick="encontrarLlave(this)" />
+</div>
+<script>
+    function encontrarLlave(img) {
+        fetch('/Home/EncontrarLlave', { method: 'POST' })
+            .then(res => res.json())
+            .then(data => {
+                if (!img.classList.contains('tocada')) {
+                    img.style.display = 'none';
+                    img.classList.add('tocada');
+                    if (data.avanzar) {
+                        window.location.href = '/Home/Sala/3';
+                    }
+                }
+            });
+    }
+</script>
+
