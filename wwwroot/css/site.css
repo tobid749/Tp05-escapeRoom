@@ -69,3 +69,24 @@ img:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.penal img{
+  width: 65%;
+  height: auto;
+  border-radius: 100px;
+  box-shadow: 10px 6px 6px 2px rgb(0, 0, 0);
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+.Gano img{
+  width: 50%;
+  margin-bottom: 3%;
+}
+.viruzz{
+  width: 70%;
+}
+.sala5{
+  background-image: url('/Imagenes/Ring.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}

@@ -1,12 +1,15 @@
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<section class="sala5">
 <h2>Sala 5 - Pelea final con Viruzz</h2>
 <p>Encontrá los guantes y golpeá a Viruzz</p>
-<img src="/imagenes/imagenguante1.png" onclick="agarrarGuante(this)" />
-<img src="/imagenes/imagenguante2.png" onclick="agarrarGuante(this)" />
+<section class="Boxeo">
+<img src="/Imagenes/GuanteBoxeo.png" onclick="agarrarGuante(this)" />
+<img src="/Imagenes/GuanteBoxeo2.png" onclick="agarrarGuante(this)" />
 <br>
-<img id="viruzz" src="/imagenes/imagenviruzz1.png" onclick="golpearViruzz()" />
+<img class="viruzz" id="viruzz" src="/Imagenes/Viruzz.png" onclick="golpearViruzz()" />
+</section>
 <script>
     function agarrarGuante(img) {
         fetch('/Home/EncontrarGuante', { method: 'POST' })
@@ -30,3 +33,4 @@
             });
     }
 </script>
+</section>

@@ -113,7 +113,7 @@ public IActionResult Iniciar()
             {
                 HttpContext.Session.SetString("SalaActual", "6");
                 SumarCafetera();
-                return Json(new { fin = true, ganado = true });
+                return Json(new { fin = true, ganado = true});
             }
 
             string imagen = golpes >= 2 ? "imagenviruzz2" : "imagenviruzz1";
