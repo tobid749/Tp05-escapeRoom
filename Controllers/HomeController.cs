@@ -7,6 +7,14 @@ namespace Tp05_escapeRoom.Controllers
     {
         public IActionResult Index() => View();
 
+
+
+[HttpGet]
+public IActionResult Iniciar()
+{
+    return View();
+}
+
         [HttpPost]
         public IActionResult Iniciar(string nombreJugador)
         {
@@ -69,16 +77,17 @@ namespace Tp05_escapeRoom.Controllers
         }
 
         [HttpPost]
-        public IActionResult Sala4(int eleccion)
-        {
-            if (eleccion == 4)
+            public IActionResult Sala4(int eleccion)
+        {       
+         if (eleccion == 4)
             {
-                HttpContext.Session.SetString("SalaActual", "5");
-                SumarCafetera();
-                return View("MomoGano");
+        HttpContext.Session.SetString("SalaActual", "5");
+        SumarCafetera();
+        return View("Gol"); 
+         }
+             return View("Penal");   
             }
-            return View("MomoPenal");
-        }
+
 
         [HttpPost]
         public IActionResult EncontrarGuante()
