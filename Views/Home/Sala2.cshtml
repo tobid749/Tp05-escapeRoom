@@ -6,12 +6,18 @@
 
 <h2>Sala 2 - Buscá las llaves de las 3 propiedades</h2>
 <p>Tocá las 3 llaves para avanzar</p>
-<div class="imagenes">
-    <img src="" alt="">
-    <img src="/Imagenes/imagen1.png" onclick="encontrarLlave(this)" />
-    <img src="/Imagenes/imagen2.png" onclick="encontrarLlave(this)" />
-    <img src="/Imagenes/imagen3.png" onclick="encontrarLlave(this)" />
-</div>
+
+    <div>
+            <img class= "Llave1" src="/Imagenes/imagen1.png" onclick="encontrarLlave(this)" />
+    </div>
+    <div>
+        <img class= "Llave2" src="/Imagenes/imagen2.png" onclick="encontrarLlave(this)" />
+    </div>
+    <div>
+        <img class= "Llave3" src="/Imagenes/imagen3.png" onclick="encontrarLlave(this)" />
+    </div>
+    
+
 <script>
     function encontrarLlave(img) {
         fetch('/Home/EncontrarLlave', { method: 'POST' })
