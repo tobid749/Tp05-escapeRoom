@@ -71,21 +71,31 @@ img:hover {
 
 .Llave1 {
   position: absolute;
-  width: 5%;
+  width: 3%;
   top: 20%;
   left: 10%;
+  margin: 5%;
+  margin-left: 10%;
 }
 
 .Llave2 {
   position: absolute;
-  width: 5%;
+  width: 2%;
   top: 40%;
   left: 50%;
+  margin-top: 27%;
+  margin-right: 500%;
 }
 
 .Llave3 {
   position: absolute;
-  width: 5%;
+  width: 3%;
   top: 70%;
   left: 80%;
+  margin-top: 6%;
+
+}
+.Victoria img{
+  width: 50%;
+  height: auto;
 }

@@ -3,12 +3,11 @@
 }
 <h2>Sala 3 - ¿Qué me pongo para la boda de Coscu?</h2>
 <p>Elegí la prenda correcta</p>
+<img src="/Imagenes/puedoCaerAsi.png" alt="">
 <form method="post" action="/Home/Sala3">
-    <button type="submit" name="prenda" value="imagen1">Remera</button>
-    <button type="submit" name="prenda" value="imagen2">Campera</button>
-    <button type="submit" name="prenda" value="imagen4">Traje</button>
+    <input type="number" name="eleccion" min="1" max="11" required />
+    <button type="submit">Patear</button>
 </form>
 @if (ViewBag.Error != null) {
     <p class="error">@ViewBag.Error</p>
 }
-

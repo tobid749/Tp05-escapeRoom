@@ -64,17 +64,19 @@ public IActionResult Iniciar()
         }
 
         [HttpPost]
-        public IActionResult Sala3(string prenda)
-        {
-            if (prenda == "imagen4")
-            {
-                HttpContext.Session.SetString("SalaActual", "4");
-                SumarCafetera();
-                return RedirectToAction("Sala", new { id = 4 });
-            }
-            ViewBag.Error = "Esa prenda no sirve para la boda";
-            return View("Sala3");
-        }
+public IActionResult Sala3(int eleccion)
+{
+    if (eleccion == 3)
+    {
+        HttpContext.Session.SetString("SalaActual", "4");
+        SumarCafetera();
+        return RedirectToAction("Sala", new { id = 4 }); 
+    }
+
+    ViewBag.Error = "Esa prenda no sirve para la boda";
+    return View("Sala3");
+}
+
 
         [HttpPost]
             public IActionResult Sala4(int eleccion)
