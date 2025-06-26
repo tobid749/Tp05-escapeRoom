@@ -1,14 +1,22 @@
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<section class="Verde">
+
+
 <div class="penal">
 <h2>Sala 4 - El penal del campeonato</h2>
+<p>Con este penal puedo llegar a primera y cumplir mi sueño.
+    ¿A donde lo pateo?
+</p>
 <img src="/Imagenes/penal.png" alt="">
 <p>Elegí un número del 1 al 6</p>
-</div>
+
 
 
 <form method="post" action="/Home/Sala4">
     <input type="number" name="eleccion" min="1" max="6" required />
     <button type="submit">Patear</button>
 </form>
+</div>
+</section>

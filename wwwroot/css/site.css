@@ -58,7 +58,7 @@ img:hover {
   margin-bottom: 3%;
 }
 .viruzz{
-  width: 70%;
+  width: 50%;
 }
 .sala5{
   background-image: url('/Imagenes/Ring.png');
@@ -98,4 +98,134 @@ img:hover {
 .Victoria img{
   width: 50%;
   height: auto;
+}
+.Guante1 {
+  position: absolute;
+  width: 1%;
+  margin-top: 3%;
+  margin-left: 40%;
+}
+
+.Guante2 {
+  position: absolute;
+  width: 1%;
+  margin-bottom: 20%;
+  margin-left: 24%;
+}
+
+.Guante1, .Guante2 {
+  cursor: pointer;
+}
+.vida {
+  width: 40px;
+  height: auto;
+  margin: 5px;
+  transition: opacity 0.3s ease;
+}
+.Index{
+  background-image: url('/Imagenes/FONDO1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 20px;
+}
+.Empezar{
+  margin-top: 10%;
+}
+.Iniciar1{
+  background-image: url('/Imagenes/Fondo2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 20px;
+}
+.Sala1{
+  background-image: url('/Imagenes/Fondo3.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 20px;
+}
+.Sala1 p{
+  color: rgb(240, 0, 228);
+  margin-top: 5%;
+}
+.rojo p{
+  color: red;
+}
+.rojo a{
+  color:aliceblue;
+}
+.sala2 p, h2{
+ color: white;
+ background: black;
+}
+.sala3{
+  background-color: rgb(104, 104, 167);
+  background-size: cover;
+  min-height: 100vh;
+}
+.Verde{
+  background-color: rgb(63, 143, 63);
+  background-size: cover;
+  min-height: 100vh;
+}
+.verde2
+{ background-color: rgb(63, 143, 63);
+  background-size: cover;
+  min-height: 100vh;
+}
+.verde3{
+  background-color: rgb(63, 143, 63);
+  background-size: cover;
+  min-height: 100vh;
+}
+.sala5 p{
+  color: rgb(107, 89, 89);
+  background-color: #222;
+}
+.sala5 h2
+{
+  color: rgb(107, 89, 89);
+}
+.Victoria{
+  background-image: url('/Imagenes/Fondo4.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 20px;
+}
+.Empezar button:hover{
+  background-color: #222;
+  color: hsl(0, 75%, 50%);
+  animation: 1s;
+  scale: 1.1;
+}
+.Iniciar1 button:hover{
+  background-color: #222;
+  color: hsl(0, 75%, 50%);
+  animation: 1s;
+  scale: 1.1;
+}
+.rojo button:hover{
+  background-color: #222;
+  color: hsl(0, 75%, 50%);
+  animation: 1s;
+  scale: 1.1;
+}
+.sala3 button:hover{
+  background-color: #222;
+  color: hsl(258, 77%, 45%);
+  animation: 1s;
+  scale: 1.1;
+}
+.penal button:hover{
+  background-color: #222;
+  color: hsl(140, 85%, 51%);
+  animation: 1s;
+  scale: 1.1;
 }

@@ -1,15 +1,30 @@
-@{
+@{ 
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<div class="vidasViruzz">
+    <img src="/Imagenes/Corazon.webp" class="vida" />
+    <img src="/Imagenes/Corazon.webp" class="vida" />
+    <img src="/Imagenes/Corazon.webp" class="vida" />
+</div>
+
+
+</div>
 <section class="sala5">
-<h2>Sala 5 - Pelea final con Viruzz</h2>
-<p>Encontrá los guantes y golpeá a Viruzz</p>
-<section class="Boxeo">
-<img src="/Imagenes/GuanteBoxeo.png" onclick="agarrarGuante(this)" />
-<img src="/Imagenes/GuanteBoxeo2.png" onclick="agarrarGuante(this)" />
-<br>
+<h2>Sala 5 - Pelea con Viruzz</h2>
+<p>Encontrá los guantes y ganale a Viruzz, necesito ganar la velada.
+    Pista: Hay un guante que es facil de encontrar, pero dificil de agarrar
+</p>
+
+<div>
+    <img class="Guante1" src="/Imagenes/GuanteBoxeo.png" onclick="agarrarGuante(this)" />
+</div>
+<div>
+    <img class="Guante2" src="/Imagenes/GuanteBoxeo2.png" onclick="agarrarGuante(this)" />
+</div>
+
 <img class="viruzz" id="viruzz" src="/Imagenes/Viruzz.png" onclick="golpearViruzz()" />
 </section>
+
 <script>
     function agarrarGuante(img) {
         fetch('/Home/EncontrarGuante', { method: 'POST' })
@@ -18,19 +33,27 @@
                 img.style.display = 'none';
             });
     }
+
     function golpearViruzz() {
-        fetch('/Home/GolpearViruzz', { method: 'POST' })
-            .then(res => res.json())
-            .then(data => {
-                if (data.exito) {
-                    document.getElementById('viruzz').src = '/imagenes/' + data.imagenViruzz + '.png';
-                } else {
-                    alert(data.mensaje);
+    fetch('/Home/GolpearViruzz', { method: 'POST' })
+        .then(res => res.json())
+        .then(data => {
+            if (data.exito) {
+                document.getElementById('viruzz').src = '/Imagenes/Viruzz.png';
+
+                
+                const vidas = document.querySelectorAll('.vida');
+                for (let i = 0; i < data.golpes && i < vidas.length; i++) {
+                    vidas[i].style.opacity = '0.2';
                 }
-                if (data.ganado) {
-                    window.location.href = '/Home/Victoria';
-                }
-            });
-    }
+            } else {
+                alert(data.mensaje);
+            }
+
+            if (data.ganado) {
+                window.location.href = '/Home/Victoria';
+            }
+        });
+}
+
 </script>
-</section>

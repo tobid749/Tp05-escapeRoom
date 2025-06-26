@@ -1,11 +1,19 @@
+<section class="Sala1">
 
 <h2>Sala 1 - El clásico baneo</h2>
-
+<p>¿Cual fue el user del famoso baneo por los auris?
+    Entra al link y volve cuando tengas la respuesta.
+    Te deseo suerte semental!
+    (La respuesta en minuscula)
+</p>
+<div class="rojo">
 <p>Usá este <a href="https://wordwall.net/es/resource/93320348" target="_blank">link</a> para resolver el anagrama</p>
 <form method="post" action="/Home/Sala1">
-    <input type="text" name="respuesta" required />
+    <input type="text" name="respuesta" required autocomplete="off"/>
     <button type="submit">Enviar</button>
 </form>
 @if (ViewBag.Error != null) {
     <p class="error">@ViewBag.Error</p>
 }
+ </div>   
+</section>
